@@ -113,8 +113,6 @@ class Minist:
                 print(f'{batch_idx+1} loss: {running_loss /300}')
                 total_loss += running_loss
                 running_loss = 0.0
-        # 保存模型
-        self.saveModel(self.modelpath)
         # 更新窗口图像
         if self.isVisual:
             self.vis.line([total_loss/(batch_idx+1)], [epoch],
@@ -155,7 +153,7 @@ class Minist:
 
             f1 = f1_score(trueClass, predicteds,
                           average="macro")  # f1
-            print('---------------------------------------------\n')
+            print('----------------------------------------------------\n')
 
             if self.isVisual:
                 self.vis.line([f1], [self.epoch+1],

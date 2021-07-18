@@ -1,9 +1,11 @@
-# MINIT
+# PytorchTest
+
+## MINIT
 
 > by zhangkang
 手写体数字识别
 
-## TODO
+### TODO
 
 1. 更改数据读入方式
 2. 保存粒度细化
